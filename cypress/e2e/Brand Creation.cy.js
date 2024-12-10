@@ -2,7 +2,7 @@ describe("Brand Creation", () => {
 
   const siteURL = "https://www.otto.com/";
 
-  beforeEach(() => {
+  before(() => {
     cy.visit("https://qa-automation.d49kd6luw1c4m.amplifyapp.com/");
     cy.request({
       method: "POST",
