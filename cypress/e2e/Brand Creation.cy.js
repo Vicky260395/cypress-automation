@@ -1,6 +1,6 @@
 describe("Brand Creation", () => {
-
-  const siteURL = "https://www.otto.com/";
+  const brandName = "Nordictrack";
+  const siteURL = "https://www.nordictrack.com/";
 
   before(() => {
     cy.visit("https://qa-automation.d49kd6luw1c4m.amplifyapp.com/");
@@ -23,9 +23,8 @@ describe("Brand Creation", () => {
   });
 
   it("Creating One New Brand", () => {
-    const brandName = "OTTO23";
     cy.contains("button", "ADD BRAND").click();
-    cy.get('input[name="image"]').click().attachFile("Huawei.jpg");
+    cy.get('input[name="image"]').click().attachFile("Kangol.png");
     cy.get('input[name="name"]').type(brandName);
     cy.get("#siteUrl").type(siteURL);
     cy.get("#react-select-2-input").type(`${brandName}{enter}`);
@@ -35,16 +34,14 @@ describe("Brand Creation", () => {
     cy.get("#react-select-5-input").type("Chennai").wait(5000).type("{enter}");
     cy.get("button span").last().click({ force: true });
     cy.wait(5000);
+    cy.get('[aria-label="Search Brands..."]').click()
+    cy.get('input[placeholder="Search Brands..."]').type(brandName).wait(5000).type("{enter}");
   });
 
   it("should display an error when creating a duplicate brand", () => {
-    const brandName = "OTTO24";
-    // cy.on('window:before:unload', (e) => {
-    //   e.preventDefault(); // Stop the page from navigating away or unloading
-    // });
-    // cy.wait(5000);
     cy.contains("button", "ADD BRAND").click();
     cy.get('input[name="name"]').type(brandName);
     cy.get("div > span").should("contain.text", "Brand name already exists");
   });  
+
 });
