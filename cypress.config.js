@@ -4,7 +4,7 @@ const path = require('path')
 function getDataFromHtmlWatchlistIntoJson() {
   const XLSX = require("xlsx");
   // Pfad zur Excel-Datei
-  const filePath = path.resolve(__dirname, "./cypress/fixtures/testFile.xlsx")
+  const filePath = path.resolve(__dirname, "./cypress/fixtures/BrandsList.xlsx")
   // Lesen der Excel-Datei
   const workbook = XLSX.readFile(filePath);
   // Erste Arbeitsmappe auswählen
@@ -19,6 +19,13 @@ function getDataFromHtmlWatchlistIntoJson() {
 }
 
 module.exports = defineConfig({
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/reports',
+    overwrite: false,
+    html: true,
+    json: true,
+  },
   e2e: {
     testIsolation: false,
     setupNodeEvents(on, config) {

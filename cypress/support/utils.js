@@ -1,9 +1,10 @@
-import * as XLSX from 'xlsx';
+const XLSX = require('xlsx');
 
-// Function to read Excel data
-export const readExcel = (filePath) => {
-  const workbook = XLSX.readFile(filePath); // Read the Excel file
-  const sheetName = workbook.SheetNames[0]; // Get the first sheet
-  const worksheet = workbook.Sheets[sheetName];
-  return XLSX.utils.sheet_to_json(worksheet); // Convert the sheet to JSON
-};
+function readExcel(filePath) {
+  const workbook = XLSX.readFile(filePath);
+  const sheetName = workbook.SheetNames[0]; // Read the first sheet
+  const sheetData = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]); // Convert to JSON
+  return sheetData;
+}
+
+module.exports = { readExcel };
