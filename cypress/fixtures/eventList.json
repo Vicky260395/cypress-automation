@@ -1,44 +1,56 @@
 {
-    "event1": {
-      "eventName": "Canterbury vs Otago",
-      "startDate": "2025-01-08",
-      "endDate": "2025-01-30",
-      "closeDate": "2025-01-30",
-      "websiteURL" : "https://www.cricbuzz.com/live-cricket-scores/109793/dhcp-vs-rgr-11th-match-bpl-2024-25",
-      "description" : "46 T20s",
-      "eventType": "CRICKET",
-      "inventory": "Board",
-      "projectOwner": "Vignesh SM462"
-    },
-    "event2": {
-      "eventName": "Wellington vs Central Districts",
-      "startDate": "2025-02-08",
-      "endDate": "2025-02-28",
-      "closeDate": "2025-02-28",
-      "websiteURL" : "https://www.cricbuzz.com/live-cricket-scores/109793/dhcp-vs-rgr-11th-match-bpl-2024-25",
-      "description" : "5 ODI",
-      "eventType": "CRICKET",
-      "inventory": "Hybrid",
-      "projectOwner": "Arjun All Roles",
-      "categoryblock": "Agarbatti & Dhoop"
-    },
-    "event3": {
-      "eventName": "Canterbury vs Auckland",
-      "startDate": "2025-01-08",
+
+  "event1": {
+    "eventName": "MLS vs SYS",
+    "startDate": "2025-01-10",
+    "endDate": "2025-01-30",
+    "closeDate": "2025-01-30",
+    "websiteURL" : "https://www.cricbuzz.com/live-cricket-scores/109793/dhcp-vs-rgr-11th-match-bpl-2024-25",
+    "description" : "46 T20s",
+    "eventType": "CRICKET",
+    "inventory": "Central League Sponsorship",
+    "projectOwner": "Vignesh SM462"
+  },
+  "event2": {
+    "eventName": "SEC vs MICT",
+    "startDate": "2025-02-10",
+    "endDate": "2025-02-28",
+    "closeDate": "2025-02-28",
+    "websiteURL" : "https://www.cricbuzz.com/live-cricket-scores/109793/dhcp-vs-rgr-11th-match-bpl-2024-25",
+    "description" : "5 ODI",
+    "eventType": "CRICKET",
+    "inventory": "Central League Sponsorship",
+    "projectOwner": "Arjun All Roles",
+    "categoryblock": "Agarbatti & Dhoop"
+  },
+  "event3": {
+    "eventName": "RAJ vs TN",
+    "startDate": "2025-01-12",
+    "endDate": "2025-03-30",
+    "closeDate": "2025-03-30",
+    "eventType": "CRICKET",
+    "inventory": "Jersey Sponsorship",
+    "projectOwner": "Thammaiah LeagueX"
+  },
+  "event4": {
+      "eventName": "HAR vs BEN",
+      "startDate": "2025-01-10",
       "endDate": "2025-03-30",
       "closeDate": "2025-03-30",
       "eventType": "CRICKET",
-      "inventory": "Board",
-      "projectOwner": "Vignesh SM462"
+      "inventory": "Fan Park Sponsorship",
+      "projectOwner": "Joynal Dsouza"
     },
-    "event4": {
-        "eventName": "Canterbury vs Auckland",
-        "startDate": "2025-01-08",
-        "endDate": "2025-03-30",
-        "closeDate": "2025-03-30",
+      "event5": {
+        "eventName": "WEL vs CD",
+        "startDate": "2025-01-12",
+        "endDate": "2025-01-31",
+        "closeDate": "2025-01-30",
         "eventType": "CRICKET",
-        "inventory": "Board",
-        "projectOwner": "Vignesh SM462"
+        "inventory1": "On Ground",
+        "projectOwner1": "Vignesh SM462",
+        "inventory2": "media",
+        "projectOwner2": "Kishore Kumar"
       }
   }
   

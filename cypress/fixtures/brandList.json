@@ -1,50 +1,50 @@
 {
   "brand1": {
-    "name": "Blank",
-    "websiteURL": "https://www.Blank.com",
-    "company": "Blank",
+    "name": "Blackburn",
+    "websiteURL": "https://www.bkackburn.com",
+    "company": "Blackburn",
     "category": "technology",
     "revenue": "550",
     "brandOwner": "Vignesh Lenny",
     "brandLocation": "Chennai"
   },
   "brand2": {
-    "name": "Blank",
-    "websiteURL": "https://www.beurer.com",
-    "company": "Beurer",
+    "name": "Blackburn",
+    "websiteURL": "https://www.Blackburn.com",
+    "company": "Blackburn",
     "category": "technology",
     "revenue": "550",
     "brandOwner": "Vignesh Lenny",
     "brandLocation": "Chennai"
   },
   "brand3": {
-    "name": "Bike",
-    "websiteURL": "https://www.bike.com",
-    "company": "Bike",
+    "name": "Blink",
+    "websiteURL": "https://www.blink.com",
+    "company": "Blink",
     "category": "agriculture",
     "revenue": "1000",
     "brandLocation": "Madurai"
   },
    "brand4": {
-    "name": "Bioflex",
-    "websiteURL": "https://www.bioflex.com",
-    "company": "Bioflex",
+    "name": "Blizzard",
+    "websiteURL": "https://www.blizzard.com",
+    "company": "Blizzard",
     "category": "agriculture",
     "brandLocation": "Coimbatore"
   },
    "brand5": {
-    "name": "Birlea",
-    "websiteURL": "https://www.birlea.com",
-    "company": "Birlea",
+    "name": "Blokees",
+    "websiteURL": "https://www.blokees.com",
+    "company": "BLokees",
     "category": "Sports Industry",
     "revenue": "2345",
     "brandOwner": "Vignesh Lenny",
     "brandLocation": "Chennai"
   },
    "brand6": {
-    "name": "Bissell",
-    "websiteURL": "https://www.bissell.com",
-    "company": "Bissell",
+    "name": "Blowfish",
+    "websiteURL": "https://www.blowfish.com",
+    "company": "BLowfish",
     "category": "Sports Industry",
     "revenue": "4768",
     "brandOwner": "Vignesh Lenny",
