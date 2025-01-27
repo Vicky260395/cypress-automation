@@ -1,36 +1,36 @@
 {
     "employee1": {
-      "firstname": "Rajendra",
+      "firstname": "Vikram",
       "lastname": "Singh",
-      "email": "rajendrasingh@gmail.com",
+      "email": "vikramsingh@gmail.com",
       "phonenumber": "9345550189",
       "city": "Coimbatore",
       "department": "Sales",
       "vertical": "Catalyst"
     },
     "employee2":{
-        "firstname": "Rajendra",
+        "firstname": "Vikram",
         "lastname": "Singh",
-        "email": "rajendrasingh@gmail.com",
+        "email": "vikramsingh@gmail.com",
         "phonenumber": "8122174654",
         "city": "Coimbatore",
         "department": "Sales",
         "vertical": "Catalyst"
     },
     "employee3":{
-        "firstname": "Durre",
-        "lastname": "Shahwar",
-        "email": "durreshahwar@gmail.com",
+        "firstname": "Kranti",
+        "lastname": "Kalekar",
+        "email": "krantikalekar@gmail.com",
         "phonenumber": "9003467046",
         "city": "Erode",
         "department": "Administration",
         "vertical": "ITW"
     },
     "employee4":{
-        "firstname": "Kanchan",
-        "lastname": "Balla",
-        "middlename" : "Dey",
-        "email": "kanchanballa@gmail.com",
+        "firstname": "Pradipta",
+        "lastname": "Kumar",
+        "middlename" : "Roy",
+        "email": "pradiptakumar@gmail.com",
         "phonenumber": "8122174654",
         "city": "Coimbatore",
         "department": "Sales",
@@ -41,18 +41,18 @@
         "empcode" : "ITW12"
     },
     "employee5": {
-        "firstname": "Naresh",
-        "lastname": "Varma",
-        "email": "nareshvarma@gmail.com",
+        "firstname": "Pallav",
+        "lastname": "Kapoor",
+        "email": "Pallavkapoor@gmail.com",
         "phonenumber": "9345550189",
         "city": "Coimbatore",
         "department": "Sales",
         "vertical": "Catalyst"
       },
     "employee6": {
-        "firstname": "Punnu",
-        "lastname": "Grover",
-        "email": "punnugrover@gmail.com",
+        "firstname": "Sanjay",
+        "lastname": "Kumar",
+        "email": "sanjaykumar@gmail.com",
         "phonenumber": "9345550189",
         "city": "Coimbatore",
         "department": "Sales",

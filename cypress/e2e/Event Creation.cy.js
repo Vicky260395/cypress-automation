@@ -17,7 +17,7 @@ describe('Event Creation', () => {
     const eventstartDate = eventData.event1.startDate; 
     const eventendDate = eventData.event1.endDate; 
     const eventcloseDate = eventData.event1.closeDate
-    cy.contains("button", "Add Event").click();
+    cy.contains("button", "ADD EVENT").click();
     cy.get('input[placeholder="Enter Event Name"]').type(eventOne.eventName);
     cy.get('#start_date').click();
     selectDate(eventstartDate);
@@ -27,11 +27,14 @@ describe('Event Creation', () => {
     selectDate(eventcloseDate);
     cy.get('input[placeholder="Add website URL"]').type(eventOne.websiteURL);
     cy.get('input[placeholder="Enter event description"]').type(eventOne.description);
-    cy.contains("label", "Event Type*").parent().find('input[type="text"]').type(eventOne.eventType).wait(500).type("{enter}");
-    cy.contains("label", "Inventory*").parent().find('input[type="text"]').type(eventOne.inventory).wait(500).type("{enter}");
+    cy.contains("label", "Event Type*").parent().find('input[type="text"]').type(eventOne.eventType).wait(5000).type("{enter}");
+    cy.contains("label", "Inventory*").parent().click();
+    cy.get('#scrollable-div').scrollTo('bottom').wait(5000);
+    cy.get('#scrollable-div').contains('span',eventOne.inventory).scrollIntoView().should('be.visible').click({ force: true });
     cy.contains("label", "Select Project owner(s)*").parent().click().find('input[type="search"]').type(eventOne.projectOwner).wait(5000).type("{enter}")
     cy.get('input[class="PrivateSwitchBase-input css-1m9pwf3"]').click();
     cy.contains("button", "SUBMIT").click();
+    cy.wait(5000);
   });
 
   //All Fields Event Creation
@@ -40,7 +43,7 @@ describe('Event Creation', () => {
     const eventstartDate = eventData.event2.startDate; 
     const eventendDate = eventData.event2.endDate;     
     const eventcloseDate = eventData.event2.closeDate
-    cy.contains("button", "Add Event").click();
+    cy.contains("button", "ADD EVENT").click();
     cy.get('input[placeholder="Enter Event Name"]').type(eventTwo.eventName);
     cy.get('#start_date').click();
     selectDate(eventstartDate);
@@ -51,12 +54,15 @@ describe('Event Creation', () => {
     cy.get('input[placeholder="Add website URL"]').type(eventTwo.websiteURL);
     cy.get('input[placeholder="Enter event description"]').type(eventTwo.description);
     cy.contains("label", "Event Type*").parent().find('input[type="text"]').type(eventTwo.eventType).wait(500).type("{enter}");
-    cy.contains("label", "Inventory*").parent().find('input[type="text"]').type(eventTwo.inventory).wait(500).type("{enter}");
+    cy.contains("label", "Inventory*").parent().click();
+    cy.get('#scrollable-div').scrollTo('bottom').wait(5000);
+    cy.get('#scrollable-div').contains('span',eventTwo.inventory).scrollIntoView().should('be.visible').click({ force: true });
     cy.contains("label", "Select Project owner(s)*").parent().click().find('input[type="search"]').type(eventTwo.projectOwner).wait(5000).type("{enter}")
     cy.get('input[class="PrivateSwitchBase-input css-1m9pwf3"]').click();
     cy.contains("label", "Category block").parent().click().find('input[type="search"]').type(eventTwo.categoryblock).wait(5000).type("{enter}")
     cy.get('input[class="PrivateSwitchBase-input css-1m9pwf3"]').click();
     cy.contains("button", "SUBMIT").click();
+    cy.wait(5000);
   });
 
   //Mandatory fields Event Creation
@@ -65,7 +71,7 @@ describe('Event Creation', () => {
     const eventstartDate = eventData.event3.startDate;
     const eventendDate = eventData.event3.endDate;    
     const eventcloseDate = eventData.event3.closeDate
-    cy.contains("button", "Add Event").click();
+    cy.contains("button", "ADD EVENT").click();
     cy.get('input[placeholder="Enter Event Name"]').type(eventThree.eventName);
     cy.get('#start_date').click();
     selectDate(eventstartDate);
@@ -74,10 +80,13 @@ describe('Event Creation', () => {
     cy.get('#close_date').click();
     selectDate(eventcloseDate);
     cy.contains("label", "Event Type*").parent().find('input[type="text"]').type(eventThree.eventType).wait(500).type("{enter}");
-    cy.contains("label", "Inventory*").parent().find('input[type="text"]').type(eventThree.inventory).wait(500).type("{enter}");
+    cy.contains("label", "Inventory*").parent().click();
+    cy.get('#scrollable-div').scrollTo('bottom').wait(5000);
+    cy.get('#scrollable-div').contains('span',eventThree.inventory).scrollIntoView().should('be.visible').click({ force: true });
     cy.contains("label", "Select Project owner(s)*").parent().click().find('input[type="search"]').type(eventThree.projectOwner).wait(5000).type("{enter}")
     cy.get('input[class="PrivateSwitchBase-input css-1m9pwf3"]').click();
     cy.contains("button", "SUBMIT").click();
+    cy.wait(5000);
   });
 
   
@@ -87,7 +96,7 @@ describe('Event Creation', () => {
     const eventstartDate = eventData.event4.startDate; 
     const eventendDate = eventData.event4.endDate;    
     const eventcloseDate = eventData.event4.closeDate
-    cy.contains("button", "Add Event").click();
+    cy.contains("button", "ADD EVENT").click();
     cy.get('input[placeholder="Enter Event Name"]').type(eventFour.eventName);
     cy.get('#start_date').click();
     selectDate(eventstartDate);
@@ -96,10 +105,13 @@ describe('Event Creation', () => {
     cy.get('#close_date').click();
     selectDate(eventcloseDate);
     cy.contains("label", "Event Type*").parent().find('input[type="text"]').type(eventFour.eventType).wait(500).type("{enter}");
-    cy.contains("label", "Inventory*").parent().find('input[type="text"]').type(eventFour.inventory).wait(500).type("{enter}");
+    cy.contains("label", "Inventory*").parent().click();
+    cy.get('#scrollable-div').scrollTo('bottom').wait(5000);
+    cy.get('#scrollable-div').contains('span',eventFour.inventory).scrollIntoView().should('be.visible').click({ force: true });
     cy.contains("label", "Select Project owner(s)*").parent().click().find('input[type="search"]').type(eventFour.projectOwner).wait(5000).type("{enter}")
     cy.get('input[class="PrivateSwitchBase-input css-1m9pwf3"]').click();
     cy.contains("button", "SUBMIT").click();
+    cy.wait(5000);
   });
 
     //Multiple Inventory Event Creation
@@ -108,7 +120,7 @@ describe('Event Creation', () => {
         const eventstartDate = eventData.event5.startDate; 
         const eventendDate = eventData.event5.endDate;    
         const eventcloseDate = eventData.event5.closeDate
-        cy.contains("button", "Add Event").click();
+        cy.contains("button", "ADD EVENT").click();
         cy.get('input[placeholder="Enter Event Name"]').type(eventFive.eventName);
         cy.get('#start_date').click();
         selectDate(eventstartDate);
@@ -117,12 +129,16 @@ describe('Event Creation', () => {
         cy.get('#close_date').click();
         selectDate(eventcloseDate);
         cy.contains("label", "Event Type*").parent().find('input[type="text"]').type(eventFive.eventType).wait(500).type("{enter}");
-        cy.contains("label", "Inventory*").parent().find('input[id="inventoryInput0"]').type(eventFive.inventory1).wait(5000).type("{enter}");
+        cy.contains("label", "Inventory*").parent().click();
+        cy.get('#scrollable-div').scrollTo('bottom').wait(5000);
+        cy.get('#scrollable-div').contains('span',eventFive.inventory1).scrollIntoView().should('be.visible').click({ force: true });
         cy.contains("label", "Select Project owner(s)*").eq(0).parent().click().find('input[type="search"]').type(eventFive.projectOwner1).wait(5000).type("{enter}")
         cy.get('input[class="PrivateSwitchBase-input css-1m9pwf3"]').click();
         cy.contains('h1', 'Inventories Details').click();
         cy.contains("button", "Add another Inventory").click()
-        cy.get('#inventoryInput1').click().type(eventFive.inventory2).wait(5000).type("{enter}");
+        cy.contains("span", "Select Inventory").click({ force: true });
+        cy.get('#scrollable-div').scrollTo('bottom').wait(5000);
+        cy.get('#scrollable-div').contains('span',eventFive.inventory2).scrollIntoView().should('be.visible').click({ force: true });
         cy.contains('span', 'Select Project owner(s)').click();
         cy.get('#default-search').should('be.visible').type(eventFive.projectOwner2).wait(5000).type('{enter}');
         cy.get('input[class="PrivateSwitchBase-input css-1m9pwf3"]').click();

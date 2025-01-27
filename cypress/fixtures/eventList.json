@@ -1,56 +1,55 @@
 {
-
-  "event1": {
-    "eventName": "MLS vs SYS",
-    "startDate": "2025-01-10",
-    "endDate": "2025-01-30",
-    "closeDate": "2025-01-30",
+    "event1": {
+    "eventName": "LQ vs IU",
+    "startDate": "2025-01-27",
+    "endDate": "2025-02-26",
+    "closeDate": "2025-02-26",
     "websiteURL" : "https://www.cricbuzz.com/live-cricket-scores/109793/dhcp-vs-rgr-11th-match-bpl-2024-25",
     "description" : "46 T20s",
     "eventType": "CRICKET",
-    "inventory": "Central League Sponsorship",
+    "inventory": "OTT",
     "projectOwner": "Vignesh SM462"
   },
   "event2": {
-    "eventName": "SEC vs MICT",
+    "eventName": "PZ vs QG",
     "startDate": "2025-02-10",
-    "endDate": "2025-02-28",
-    "closeDate": "2025-02-28",
+    "endDate": "2025-03-26",
+    "closeDate": "2025-03-26",
     "websiteURL" : "https://www.cricbuzz.com/live-cricket-scores/109793/dhcp-vs-rgr-11th-match-bpl-2024-25",
     "description" : "5 ODI",
     "eventType": "CRICKET",
-    "inventory": "Central League Sponsorship",
+    "inventory": "OTT",
     "projectOwner": "Arjun All Roles",
     "categoryblock": "Agarbatti & Dhoop"
   },
   "event3": {
-    "eventName": "RAJ vs TN",
-    "startDate": "2025-01-12",
-    "endDate": "2025-03-30",
-    "closeDate": "2025-03-30",
+    "eventName": "MS vs KK",
+    "startDate": "2025-01-29",
+    "endDate": "2025-03-31",
+    "closeDate": "2025-03-31",
     "eventType": "CRICKET",
-    "inventory": "Jersey Sponsorship",
+    "inventory": "OTT",
     "projectOwner": "Thammaiah LeagueX"
   },
   "event4": {
-      "eventName": "HAR vs BEN",
-      "startDate": "2025-01-10",
-      "endDate": "2025-03-30",
-      "closeDate": "2025-03-30",
+      "eventName": "MS vs KK",
+      "startDate": "2025-01-29",
+      "endDate": "2025-03-31",
+      "closeDate": "2025-03-31",
       "eventType": "CRICKET",
-      "inventory": "Fan Park Sponsorship",
+      "inventory": "On Ground",
       "projectOwner": "Joynal Dsouza"
     },
-      "event5": {
-        "eventName": "WEL vs CD",
-        "startDate": "2025-01-12",
-        "endDate": "2025-01-31",
-        "closeDate": "2025-01-30",
+  "event5": {
+        "eventName": "SYT vs HBH",
+        "startDate": "2025-01-30",
+        "endDate": "2025-03-25",
+        "closeDate": "2025-03-25",
         "eventType": "CRICKET",
         "inventory1": "On Ground",
         "projectOwner1": "Vignesh SM462",
-        "inventory2": "media",
+        "inventory2": "On-Air / TV Features",
         "projectOwner2": "Kishore Kumar"
       }
-  }
+}
   

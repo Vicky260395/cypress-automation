@@ -1,6 +1,6 @@
 import performLogin from '../support/LoginITWCRM';
 describe('Employee Creation', () => {
-    let employeeData ;
+    let employeeData;
     before(() =>{
     performLogin();
     cy.get("#side__nav__Employees").click()

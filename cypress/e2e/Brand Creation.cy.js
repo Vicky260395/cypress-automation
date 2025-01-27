@@ -1,13 +1,11 @@
 describe("Brand Creation", () => {
-  let brandData ;
-
+  let brandData;
   
   // const siteURL = "https://www.Corgi.com/";
   // const brands = [
   //   { name: 'Aquasphere', websiteURL: 'https://www.aquasphere.com/', company: 'Aquasphere', category:'Sports Industry', revenue: '300', brandOwner:'Vignesh Lenny', brandLocation:'‘Aiea' },
   //   {name: 'Arena', websiteURL: 'https://www.arena-sport.com/', company: 'Arena', category:'Sports Industry', revenue: '5000', brandOwner:'Vignesh Lenny', brandLocation:'Thoothukudi'}
   // ];
-
   
   before(() => {
     cy.visit("https://qa-automation.d49kd6luw1c4m.amplifyapp.com/");
@@ -37,7 +35,7 @@ describe("Brand Creation", () => {
     const firstData = brandData.brand1;
     //const brandName = "Corgi";
     cy.contains("button", "ADD BRAND").click();
-    cy.get('input[name="image"]').selectFile("C:\\Users\\vigne\\OneDrive\\Desktop\\abibas.jpg");
+   // cy.get('input[name="image"]').selectFile("C:\\Users\\vigne\\OneDrive\\Desktop\\abibas.jpg");
     cy.get('input[name="name"]').type(firstData.name);
     cy.get("#siteUrl").type(firstData.websiteURL);
     cy.contains("label", "Company Name*").parent().find('input[type="text"]').type(firstData.company).wait(5000).type("{enter}");
@@ -70,7 +68,7 @@ describe("Brand Creation", () => {
     //const brandName = "Corsair";
     const thirdData =  brandData.brand3;
     cy.contains("button", "ADD BRAND").click();
-    cy.get('input[name="image"]').click().attachFile("Kangol.png");
+   // cy.get('input[name="image"]').click().attachFile("Kangol.png");
     cy.get('input[name="name"]').type(thirdData.name);
     cy.get("#siteUrl").type(thirdData.websiteURL);
     cy.wait(5000)
@@ -108,7 +106,7 @@ describe("Brand Creation", () => {
       cy.contains("button", "ADD BRAND").click();
       const remainingBrands = Object.keys(brandData).slice(4).map((key) => brandData[key]); 
       remainingBrands.forEach((brand) => {
-       cy.get('input[name="image"]').click().attachFile("Kangol.png");
+      // cy.get('input[name="image"]').click().attachFile("Kangol.png");
        cy.get('input[name="name"]').type(brand.name);
        cy.get("#siteUrl").type(brand.websiteURL);
        cy.contains("label", "Company Name*").parent().find('input[type="text"]').type(brand.company).wait(5000).type("{enter}");

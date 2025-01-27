@@ -1,53 +1,53 @@
 {
   "brand1": {
-    "name": "Blackburn",
-    "websiteURL": "https://www.bkackburn.com",
-    "company": "Blackburn",
-    "category": "technology",
+    "name": "BombCoosmetics",
+    "websiteURL": "https://www.BombCoosmetics.com",
+    "company": "BombCoosmetics",
+    "category": "Agarbatti & Dhoop",
     "revenue": "550",
-    "brandOwner": "Vignesh Lenny",
+    "brandOwner": "Vignesh LeagueX",
     "brandLocation": "Chennai"
   },
   "brand2": {
-    "name": "Blackburn",
-    "websiteURL": "https://www.Blackburn.com",
-    "company": "Blackburn",
-    "category": "technology",
+    "name": "BombCoosmetics",
+    "websiteURL": "https://www.BombCoosmetics.com",
+    "company": "BombCoosmetics",
+    "category": "Agarbatti & Dhoop",
     "revenue": "550",
-    "brandOwner": "Vignesh Lenny",
+    "brandOwner": "Vignesh LeagueX",
     "brandLocation": "Chennai"
   },
   "brand3": {
-    "name": "Blink",
-    "websiteURL": "https://www.blink.com",
-    "company": "Blink",
+    "name": "Bondisands",
+    "websiteURL": "https://www.Bondisands.com",
+    "company": "Bondisands",
     "category": "agriculture",
     "revenue": "1000",
     "brandLocation": "Madurai"
   },
    "brand4": {
-    "name": "Blizzard",
-    "websiteURL": "https://www.blizzard.com",
-    "company": "Blizzard",
+    "name": "Boompods",
+    "websiteURL": "https://www.Boompods.com",
+    "company": "Boompods",
     "category": "agriculture",
     "brandLocation": "Coimbatore"
   },
    "brand5": {
-    "name": "Blokees",
-    "websiteURL": "https://www.blokees.com",
-    "company": "BLokees",
+    "name": "Bottega",
+    "websiteURL": "https://www.Bottega.com",
+    "company": "Bottega",
     "category": "Sports Industry",
     "revenue": "2345",
-    "brandOwner": "Vignesh Lenny",
+    "brandOwner": "Vignesh LeagueX",
     "brandLocation": "Chennai"
   },
    "brand6": {
-    "name": "Blowfish",
-    "websiteURL": "https://www.blowfish.com",
-    "company": "BLowfish",
+    "name": "Bourjois",
+    "websiteURL": "https://www.Bourjois.com",
+    "company": "Bourjois",
     "category": "Sports Industry",
     "revenue": "4768",
-    "brandOwner": "Vignesh Lenny",
+    "brandOwner": "Vignesh LeagueX",
     "brandLocation": "Coimbatore"
   }
 }
