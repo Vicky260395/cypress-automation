@@ -1,50 +1,50 @@
 {
   "brand1": {
-    "name": "BombCoosmetics",
-    "websiteURL": "https://www.BombCoosmetics.com",
-    "company": "BombCoosmetics",
+    "name": "Bubblegum",
+    "websiteURL": "https://www.Bubblegum.com",
+    "company": "Bubblegum",
     "category": "Agarbatti & Dhoop",
     "revenue": "550",
     "brandOwner": "Vignesh LeagueX",
     "brandLocation": "Chennai"
   },
   "brand2": {
-    "name": "BombCoosmetics",
-    "websiteURL": "https://www.BombCoosmetics.com",
-    "company": "BombCoosmetics",
+    "name": "Bubblegum",
+    "websiteURL": "https://www.Bubblegum.com",
+    "company": "Bubblegum",
     "category": "Agarbatti & Dhoop",
     "revenue": "550",
     "brandOwner": "Vignesh LeagueX",
     "brandLocation": "Chennai"
   },
   "brand3": {
-    "name": "Bondisands",
-    "websiteURL": "https://www.Bondisands.com",
-    "company": "Bondisands",
+    "name": "Buff",
+    "websiteURL": "https://www.Buff.com",
+    "company": "Buff",
     "category": "agriculture",
     "revenue": "1000",
     "brandLocation": "Madurai"
   },
    "brand4": {
-    "name": "Boompods",
-    "websiteURL": "https://www.Boompods.com",
-    "company": "Boompods",
+    "name": "BukiFrance",
+    "websiteURL": "https://www.BukiFrance.com",
+    "company": "BukiFrance",
     "category": "agriculture",
     "brandLocation": "Coimbatore"
   },
    "brand5": {
-    "name": "Bottega",
-    "websiteURL": "https://www.Bottega.com",
-    "company": "Bottega",
+    "name": "Bullpadel",
+    "websiteURL": "https://www.Bullpadel.com",
+    "company": "Bullpadel",
     "category": "Sports Industry",
     "revenue": "2345",
     "brandOwner": "Vignesh LeagueX",
     "brandLocation": "Chennai"
   },
    "brand6": {
-    "name": "Bourjois",
-    "websiteURL": "https://www.Bourjois.com",
-    "company": "Bourjois",
+    "name": "Bunty",
+    "websiteURL": "https://www.Bunty.com",
+    "company": "Bunty",
     "category": "Sports Industry",
     "revenue": "4768",
     "brandOwner": "Vignesh LeagueX",

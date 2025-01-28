@@ -16,7 +16,8 @@ describe('Employee Creation', () => {
     cy.get('input[name="firstName"]').type(empOne.firstname);
     cy.get('input[name="lastName"]').type(empOne.lastname);
     cy.get('input[name="emailId"]').type(empOne.email);
-    //cy.get('[aria-label="Country selector"]').type()
+    cy.get('button[aria-label="Country selector"]').click();
+    cy.get('ul[role="listbox"]').contains('span', empOne.countryname).scrollIntoView().should('be.visible').click(); 
     cy.get('input[name="phoneNumber"]').type(empOne.phonenumber);
     cy.contains("label", "City*").parent().find('input[type="text"]').type(empOne.city).wait(5000).type("{enter}");
     cy.get("button span").contains('FEMALE').click({ force: true });
@@ -38,6 +39,8 @@ describe('Employee Creation', () => {
     cy.get('input[name="firstName"]').type(empTwo.firstname);
     cy.get('input[name="lastName"]').type(empTwo.lastname);
     cy.get('input[name="emailId"]').type(empTwo.email);
+    cy.get('button[aria-label="Country selector"]').click();
+    cy.get('ul[role="listbox"]').contains('span', empTwo.countryname).scrollIntoView().should('be.visible').click(); 
     cy.get('input[name="phoneNumber"]').type(empTwo.phonenumber);
     cy.contains("label", "City*").parent().find('input[type="text"]').type(empTwo.city).wait(5000).type("{enter}");
     cy.get("button span").contains('FEMALE').click({ force: true });
@@ -57,7 +60,8 @@ describe('Employee Creation', () => {
     cy.get('input[name="firstName"]').type(empThree.firstname);
     cy.get('input[name="lastName"]').type(empThree.lastname);
     cy.get('input[name="emailId"]').type(empThree.email);
-    //cy.get('[aria-label="Country selector"]').type()
+    cy.get('button[aria-label="Country selector"]').click();
+    cy.get('ul[role="listbox"]').contains('span', empThree.countryname).scrollIntoView().should('be.visible').click(); 
     cy.get('input[name="phoneNumber"]').type(empThree.phonenumber);
     cy.contains("label", "City*").parent().find('input[type="text"]').type(empThree.city).wait(5000).type("{enter}");
     cy.get("button span").contains('FEMALE').click({ force: true });
@@ -79,7 +83,8 @@ describe('Employee Creation', () => {
     cy.get('input[name="lastName"]').type(empFour.lastname);
     cy.get('input[name="middleName"]').type(empFour.middlename)
     cy.get('input[name="emailId"]').type(empFour.email);
-    //cy.get('[aria-label="Country selector"]').type()
+    cy.get('button[aria-label="Country selector"]').click();
+    cy.get('ul[role="listbox"]').contains('span', empFour.countryname).scrollIntoView().should('be.visible').click(); 
     cy.get('input[name="phoneNumber"]').type(empFour.phonenumber);
     cy.contains("label", "City*").parent().find('input[type="text"]').type(empFour.city).wait(5000).type("{enter}");
     cy.get("button span").contains('FEMALE').click({ force: true });
@@ -105,7 +110,8 @@ describe('Employee Creation', () => {
     cy.get('input[name="firstName"]').type(employee.firstname);
     cy.get('input[name="lastName"]').type(employee.lastname);
     cy.get('input[name="emailId"]').type(employee.email);
-    //cy.get('[aria-label="Country selector"]').type()
+    cy.get('button[aria-label="Country selector"]').click();
+    cy.get('ul[role="listbox"]').contains('span', employee.countryname).scrollIntoView().should('be.visible').click(); 
     cy.get('input[name="phoneNumber"]').type(employee.phonenumber);
     cy.contains("label", "City*").parent().find('input[type="text"]').type(employee.city).wait(5000).type("{enter}");
     cy.get("button span").contains('FEMALE').click({ force: true });
@@ -114,7 +120,7 @@ describe('Employee Creation', () => {
     cy.get('button[id="save-and-add-another-user"]').click()
     cy.wait(5000)
     })
-    
   })
+  
 })
 

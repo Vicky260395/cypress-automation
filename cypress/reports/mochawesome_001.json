@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-28T05:27:01.755Z",
+    "end": "2025-01-28T05:30:05.138Z",
+    "duration": 183383,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d42edc0a-0f37-47d4-ba69-45fd1bdd7588",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Brand Creation.cy.js",
+      "file": "cypress\\e2e\\Brand Creation.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7cb3ccdf-2249-4dc1-9bee-d6f57498a81a",
+          "title": "Brand Creation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Creating One New Brand",
+              "fullTitle": "Brand Creation Creating One New Brand",
+              "timedOut": null,
+              "duration": 49684,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const firstData = brandData.brand1;\n//const brandName = \"Corgi\";\ncy.contains(\"button\", \"ADD BRAND\").click();\n// cy.get('input[name=\"image\"]').selectFile(\"C:\\\\Users\\\\vigne\\\\OneDrive\\\\Desktop\\\\abibas.jpg\");\ncy.get('input[name=\"name\"]').type(firstData.name);\ncy.get(\"#siteUrl\").type(firstData.websiteURL);\ncy.contains(\"label\", \"Company Name*\").parent().find('input[type=\"text\"]').type(firstData.company).wait(5000).type(\"{enter}\");\ncy.contains(\"label\", \"Industry/ Category*\").parent().find('input[type=\"text\"]').type(firstData.category).wait(5000).type(\"{enter}\");\ncy.get('input[name=\"revenue\"]').type(firstData.revenue);\ncy.contains(\"label\", \"Brand Owner(s)\").parent().find('input[type=\"text\"]').type(firstData.brandOwner).wait(5000).type(\"{enter}\");\ncy.contains(\"label\", \"Head Quarters*\").parent().find('input[type=\"text\"]').type(firstData.brandLocation).wait(5000).type(\"{enter}\");\ncy.get(\"button span\").last().click({\n  force: true\n});\ncy.wait(5000);\ncy.get('[aria-label=\"Search Brands...\"]').click();\ncy.get('input[placeholder=\"Search Brands...\"]').type(firstData.name).wait(5000).type(\"{enter}\");\ncy.get('input[placeholder=\"Search Brands...\"]').clear();",
+              "err": {},
+              "uuid": "f13a4c77-7a7f-4c14-9bcc-7ae9ebb4d968",
+              "parentUUID": "7cb3ccdf-2249-4dc1-9bee-d6f57498a81a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display an error when creating a duplicate brand",
+              "fullTitle": "Brand Creation should display an error when creating a duplicate brand",
+              "timedOut": null,
+              "duration": 12872,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// const brandName = \"Corgi\";\nconst secondData = brandData.brand2;\ncy.contains(\"button\", \"ADD BRAND\").click();\ncy.get('input[name=\"name\"]').type(secondData.name);\ncy.get(\"div > span\").should(\"contain.text\", \"Brand name already exists\");\ncy.get('img[alt=\"close\"]').click();\ncy.wait(5000);\ncy.contains(\"button\", \"YES, PROCEED\").click().wait(5000);",
+              "err": {},
+              "uuid": "4ed51a45-f4c6-4b51-bf11-f7e786591e75",
+              "parentUUID": "7cb3ccdf-2249-4dc1-9bee-d6f57498a81a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Brand Creation without Brand Owner",
+              "fullTitle": "Brand Creation Brand Creation without Brand Owner",
+              "timedOut": null,
+              "duration": 33224,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//const brandName = \"Corsair\";\nconst thirdData = brandData.brand3;\ncy.contains(\"button\", \"ADD BRAND\").click();\n// cy.get('input[name=\"image\"]').click().attachFile(\"Kangol.png\");\ncy.get('input[name=\"name\"]').type(thirdData.name);\ncy.get(\"#siteUrl\").type(thirdData.websiteURL);\ncy.wait(5000);\ncy.contains(\"label\", \"Company Name*\").parent().find('input[type=\"text\"]').type(thirdData.company).wait(5000).type(\"{enter}\");\ncy.contains(\"label\", \"Industry/ Category*\").parent().find('input[type=\"text\"]').type(thirdData.category).wait(5000).type(\"{enter}\");\ncy.get('input[name=\"revenue\"]').type(thirdData.revenue);\ncy.contains(\"label\", \"Head Quarters*\").parent().find('input[type=\"text\"]').type(thirdData.brandLocation).wait(5000).type(\"{enter}\");\ncy.get(\"button span\").last().click({\n  force: true\n});\ncy.wait(5000);\n//cy.get('[aria-label=\"Search Brands...\"]').click()\ncy.get('input[placeholder=\"Search Brands...\"]').type(thirdData.name).wait(5000).type(\"{enter}\");\ncy.get('input[placeholder=\"Search Brands...\"]').clear();",
+              "err": {},
+              "uuid": "3bdb616d-08f1-477a-938b-8262352fc203",
+              "parentUUID": "7cb3ccdf-2249-4dc1-9bee-d6f57498a81a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Brand creation with only Mandatory fields",
+              "fullTitle": "Brand Creation Brand creation with only Mandatory fields",
+              "timedOut": null,
+              "duration": 28325,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//const brandName = \"Cotswold\";\nconst fourthData = brandData.brand4;\ncy.contains(\"button\", \"ADD BRAND\").click();\ncy.get('input[name=\"name\"]').type(fourthData.name);\ncy.get(\"#siteUrl\").type(fourthData.websiteURL);\ncy.contains(\"label\", \"Company Name*\").parent().find('input[type=\"text\"]').type(fourthData.company).wait(5000).type(\"{enter}\");\ncy.contains(\"label\", \"Industry/ Category*\").parent().find('input[type=\"text\"]').type(fourthData.category).wait(5000).type(\"{enter}\");\ncy.contains(\"label\", \"Head Quarters*\").parent().find('input[type=\"text\"]').type(fourthData.brandLocation).wait(5000).type(\"{enter}\");\ncy.get(\"button span\").last().click({\n  force: true\n});\ncy.wait(5000);\n//cy.get('[aria-label=\"Search Brands...\"]').click()\ncy.get('input[placeholder=\"Search Brands...\"]').type(fourthData.name).wait(5000).type(\"{enter}\");\ncy.get('input[placeholder=\"Search Brands...\"]').clear();",
+              "err": {},
+              "uuid": "8d813a60-d405-439c-bc08-c0003333907e",
+              "parentUUID": "7cb3ccdf-2249-4dc1-9bee-d6f57498a81a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creating Multiple Brands",
+              "fullTitle": "Brand Creation Creating Multiple Brands",
+              "timedOut": null,
+              "duration": 57211,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"button\", \"ADD BRAND\").click();\nconst remainingBrands = Object.keys(brandData).slice(4).map(key => brandData[key]);\nremainingBrands.forEach(brand => {\n  // cy.get('input[name=\"image\"]').click().attachFile(\"Kangol.png\");\n  cy.get('input[name=\"name\"]').type(brand.name);\n  cy.get(\"#siteUrl\").type(brand.websiteURL);\n  cy.contains(\"label\", \"Company Name*\").parent().find('input[type=\"text\"]').type(brand.company).wait(5000).type(\"{enter}\");\n  cy.contains(\"label\", \"Industry/ Category*\").parent().find('input[type=\"text\"]').type(brand.category).wait(5000).type(\"{enter}\");\n  cy.get('input[name=\"revenue\"]').type(brand.revenue);\n  cy.contains(\"label\", \"Brand Owner(s)\").parent().find('input[type=\"text\"]').type(brand.brandOwner).wait(5000).type(\"{enter}\");\n  cy.contains(\"label\", \"Head Quarters*\").parent().find('input[type=\"text\"]').type(brand.brandLocation).wait(5000).type(\"{enter}\");\n  cy.get('#backend__user__form__submit__save__add__another__1').click({\n    force: true\n  });\n  cy.wait(5000);\n});",
+              "err": {},
+              "uuid": "3db9cdf1-da69-44c0-b076-7c6d25611bb4",
+              "parentUUID": "7cb3ccdf-2249-4dc1-9bee-d6f57498a81a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f13a4c77-7a7f-4c14-9bcc-7ae9ebb4d968",
+            "4ed51a45-f4c6-4b51-bf11-f7e786591e75",
+            "3bdb616d-08f1-477a-938b-8262352fc203",
+            "8d813a60-d405-439c-bc08-c0003333907e",
+            "3db9cdf1-da69-44c0-b076-7c6d25611bb4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 181316,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

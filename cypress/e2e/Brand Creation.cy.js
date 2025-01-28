@@ -1,35 +1,15 @@
+import performLogin from '../support/LoginITWCRM';
 describe("Brand Creation", () => {
   let brandData;
   
-  // const siteURL = "https://www.Corgi.com/";
-  // const brands = [
-  //   { name: 'Aquasphere', websiteURL: 'https://www.aquasphere.com/', company: 'Aquasphere', category:'Sports Industry', revenue: '300', brandOwner:'Vignesh Lenny', brandLocation:'‘Aiea' },
-  //   {name: 'Arena', websiteURL: 'https://www.arena-sport.com/', company: 'Arena', category:'Sports Industry', revenue: '5000', brandOwner:'Vignesh Lenny', brandLocation:'Thoothukudi'}
-  // ];
-  
-  before(() => {
-    cy.visit("https://qa-automation.d49kd6luw1c4m.amplifyapp.com/");
-    cy.request({
-      method: "POST",
-      url: "https://crm-prod-qa.altergame.click/user/impersonation/auth",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Authorization-Token":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjIsInVzZXJfaWQiOjYyLCJ1c2VyRW1haWwiOiJiZWFzdEB0aGVhbHRlcm9mZmljZS5jb20iLCJ1c2VyTmFtZSI6IkJlYXN0IEFrc2hheSIsImRldmljZUlkIjoiIiwicm9sZXMiOlsiQURNSU4iLCJQTyJdLCJpYXQiOjE3MzMzODE0NzZ9.OrdV21jTVfpT2Thdcmhl1Errh5SKauGe4PSfZ57hHGY",
-      },
-      body: {
-        userEmail: "beast@thealteroffice.com",
-      },
-    }).then((response) => {
-      cy.get("input").type(response.body.token);
-      cy.contains("button", "ENTER ITW UNIVERSE").click({ force: true });
+  before(() =>{
+      performLogin();
       cy.get("#side__nav__icons_Brands").click();
       cy.fixture('brandList.json').then((data) => {
         brandData = data;
-      });
-    });
-  });
-
+        });
+      })
+    
   //Creating New Brand
   it("Creating One New Brand", () => {
     const firstData = brandData.brand1;

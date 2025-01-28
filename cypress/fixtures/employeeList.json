@@ -1,62 +1,69 @@
 {
     "employee1": {
-      "firstname": "Vikram",
-      "lastname": "Singh",
-      "email": "vikramsingh@gmail.com",
+      "firstname": "Piyush",
+      "lastname": "Kumar",
+      "email": "Piyush@gmail.com",
+      "countryname" : "Iran",
       "phonenumber": "9345550189",
       "city": "Coimbatore",
       "department": "Sales",
       "vertical": "Catalyst"
     },
     "employee2":{
-        "firstname": "Vikram",
-        "lastname": "Singh",
-        "email": "vikramsingh@gmail.com",
-        "phonenumber": "8122174654",
-        "city": "Coimbatore",
-        "department": "Sales",
-        "vertical": "Catalyst"
+      "firstname": "Piyush",
+      "lastname": "Kumar",
+      "email": "Piyush@gmail.com",
+      "countryname" : "Guyana",
+      "phonenumber": "8122174654",
+      "city": "Coimbatore",
+      "department": "Sales",
+      "vertical": "Catalyst"
+  },
+  "employee3":{
+      "firstname": "Sweta",
+      "lastname": "Gupta",
+      "email": "Swetagupta@gmail.com",
+      "countryname" : "Hungary",
+      "phonenumber": "9003467046",
+      "city": "Erode",
+      "department": "Administration",
+      "vertical": "ITW"
+  },
+  "employee4":{
+      "firstname": "Shyam",
+      "lastname": "Burman",
+      "middlename" : "Lal",
+      "email": "Shyamlalburman@gmail.com",
+      "countryname" : "India",
+      "phonenumber": "8122174654",
+      "city": "Coimbatore",
+      "department": "Sales",
+      "vertical": "Catalyst",
+      "designation": "Analyst - CRM",
+      "expertise": "Digital Sales",
+      "teamowner": "Vignesh SM461",
+      "empcode" : "ITW12"
+  },
+  "employee5": {
+      "firstname": "Parvesh",
+      "lastname": "Sharma",
+      "email": "ParveshSharma@gmail.com",
+      "countryname" : "Iran",
+      "phonenumber": "9345550189",
+      "city": "Coimbatore",
+      "department": "Sales",
+      "vertical": "Catalyst"
     },
-    "employee3":{
-        "firstname": "Kranti",
-        "lastname": "Kalekar",
-        "email": "krantikalekar@gmail.com",
-        "phonenumber": "9003467046",
-        "city": "Erode",
-        "department": "Administration",
-        "vertical": "ITW"
-    },
-    "employee4":{
-        "firstname": "Pradipta",
-        "lastname": "Kumar",
-        "middlename" : "Roy",
-        "email": "pradiptakumar@gmail.com",
-        "phonenumber": "8122174654",
-        "city": "Coimbatore",
-        "department": "Sales",
-        "vertical": "Catalyst",
-        "designation": "Analyst - CRM",
-        "expertise": "Digital Sales",
-        "teamowner": "Vignesh SM461",
-        "empcode" : "ITW12"
-    },
-    "employee5": {
-        "firstname": "Pallav",
-        "lastname": "Kapoor",
-        "email": "Pallavkapoor@gmail.com",
-        "phonenumber": "9345550189",
-        "city": "Coimbatore",
-        "department": "Sales",
-        "vertical": "Catalyst"
-      },
-    "employee6": {
-        "firstname": "Sanjay",
-        "lastname": "Kumar",
-        "email": "sanjaykumar@gmail.com",
-        "phonenumber": "9345550189",
-        "city": "Coimbatore",
-        "department": "Sales",
-        "vertical": "Catalyst"
-      }
+  "employee6": {
+      "firstname": "Naveen",
+      "lastname": "Bhalla",
+      "email": "NaveenBhalla@gmail.com",
+      "countryname" : "France",
+      "phonenumber": "934555018",
+      "city": "Coimbatore",
+      "department": "Sales",
+      "vertical": "Catalyst"
+    }
+
   }
   

@@ -1,7 +1,7 @@
 {
     "event1": {
-    "eventName": "LQ vs IU",
-    "startDate": "2025-01-27",
+    "eventName": "Dubai Capitals vs Sharjah Warriorz",
+    "startDate": "2025-01-29",
     "endDate": "2025-02-26",
     "closeDate": "2025-02-26",
     "websiteURL" : "https://www.cricbuzz.com/live-cricket-scores/109793/dhcp-vs-rgr-11th-match-bpl-2024-25",
@@ -11,7 +11,7 @@
     "projectOwner": "Vignesh SM462"
   },
   "event2": {
-    "eventName": "PZ vs QG",
+    "eventName": "Desert Vipers vs Gulf Giants",
     "startDate": "2025-02-10",
     "endDate": "2025-03-26",
     "closeDate": "2025-03-26",
@@ -23,7 +23,7 @@
     "categoryblock": "Agarbatti & Dhoop"
   },
   "event3": {
-    "eventName": "MS vs KK",
+    "eventName": "Sharjah Warriorz vs Abu Dhabi Knight Riders",
     "startDate": "2025-01-29",
     "endDate": "2025-03-31",
     "closeDate": "2025-03-31",
@@ -32,7 +32,7 @@
     "projectOwner": "Thammaiah LeagueX"
   },
   "event4": {
-      "eventName": "MS vs KK",
+      "eventName": "Sharjah Warriorz vs Abu Dhabi Knight Riders",
       "startDate": "2025-01-29",
       "endDate": "2025-03-31",
       "closeDate": "2025-03-31",
@@ -41,7 +41,7 @@
       "projectOwner": "Joynal Dsouza"
     },
   "event5": {
-        "eventName": "SYT vs HBH",
+        "eventName": "Gulf Giants vs MI Emirates",
         "startDate": "2025-01-30",
         "endDate": "2025-03-25",
         "closeDate": "2025-03-25",

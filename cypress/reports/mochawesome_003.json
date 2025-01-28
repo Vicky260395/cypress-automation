@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-28T07:19:36.674Z",
+    "end": "2025-01-28T07:21:50.897Z",
+    "duration": 134223,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c1c4316e-23d1-4c4e-a80b-13946d97916a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Event Creation.cy.js",
+      "file": "cypress\\e2e\\Event Creation.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3e30b4cb-ab65-45e1-a171-8b87c1738465",
+          "title": "Event Creation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Single Event Creation",
+              "fullTitle": "Event Creation Single Event Creation",
+              "timedOut": null,
+              "duration": 38471,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const eventOne = eventData.event1;\nconst eventstartDate = eventData.event1.startDate;\nconst eventendDate = eventData.event1.endDate;\nconst eventcloseDate = eventData.event1.closeDate;\ncy.contains(\"button\", \"ADD EVENT\").click();\ncy.get('input[placeholder=\"Enter Event Name\"]').type(eventOne.eventName);\ncy.get('#start_date').click();\n(0, _selectDate.selectDate)(eventstartDate);\ncy.get('#end_date').click();\n(0, _selectDate.selectDate)(eventendDate);\ncy.get('#close_date').click();\n(0, _selectDate.selectDate)(eventcloseDate);\ncy.get('input[placeholder=\"Add website URL\"]').type(eventOne.websiteURL);\ncy.get('input[placeholder=\"Enter event description\"]').type(eventOne.description);\ncy.contains(\"label\", \"Event Type*\").parent().find('input[type=\"text\"]').type(eventOne.eventType).wait(5000).type(\"{enter}\");\ncy.contains(\"label\", \"Inventory*\").parent().click();\ncy.get('#scrollable-div').scrollTo('bottom').wait(5000);\ncy.get('#scrollable-div').contains('span', eventOne.inventory).scrollIntoView().should('be.visible').click({\n  force: true\n});\ncy.contains(\"label\", \"Select Project owner(s)*\").parent().click().find('input[type=\"search\"]').type(eventOne.projectOwner).wait(5000).type(\"{enter}\");\ncy.get('input[class=\"PrivateSwitchBase-input css-1m9pwf3\"]').click();\ncy.contains(\"button\", \"SUBMIT\").click();\ncy.wait(5000);",
+              "err": {},
+              "uuid": "a2851034-066b-4452-8788-02997e0bd78b",
+              "parentUUID": "3e30b4cb-ab65-45e1-a171-8b87c1738465",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "All fields Event Creation",
+              "fullTitle": "Event Creation All fields Event Creation",
+              "timedOut": null,
+              "duration": 27739,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const eventTwo = eventData.event2;\nconst eventstartDate = eventData.event2.startDate;\nconst eventendDate = eventData.event2.endDate;\nconst eventcloseDate = eventData.event2.closeDate;\ncy.contains(\"button\", \"ADD EVENT\").click();\ncy.get('input[placeholder=\"Enter Event Name\"]').type(eventTwo.eventName);\ncy.get('#start_date').click();\n(0, _selectDate.selectDate)(eventstartDate);\ncy.get('#end_date').click();\n(0, _selectDate.selectDate)(eventendDate);\ncy.get('#close_date').click();\n(0, _selectDate.selectDate)(eventcloseDate);\ncy.get('input[placeholder=\"Add website URL\"]').type(eventTwo.websiteURL);\ncy.get('input[placeholder=\"Enter event description\"]').type(eventTwo.description);\ncy.contains(\"label\", \"Event Type*\").parent().find('input[type=\"text\"]').type(eventTwo.eventType).wait(500).type(\"{enter}\");\ncy.contains(\"label\", \"Inventory*\").parent().click();\ncy.get('#scrollable-div').scrollTo('bottom').wait(5000);\ncy.get('#scrollable-div').contains('span', eventTwo.inventory).scrollIntoView().should('be.visible').click({\n  force: true\n});\ncy.contains(\"label\", \"Select Project owner(s)*\").parent().click().find('input[type=\"search\"]').type(eventTwo.projectOwner).wait(5000).type(\"{enter}\");\ncy.get('input[class=\"PrivateSwitchBase-input css-1m9pwf3\"]').click();\ncy.contains(\"label\", \"Category block\").parent().click().find('input[type=\"search\"]').type(eventTwo.categoryblock).wait(5000).type(\"{enter}\");\ncy.get('input[class=\"PrivateSwitchBase-input css-1m9pwf3\"]').click();\ncy.contains(\"button\", \"SUBMIT\").click();\ncy.wait(5000);",
+              "err": {},
+              "uuid": "8ca1fd1b-b7ab-42e9-9ee0-ac10c8541f44",
+              "parentUUID": "3e30b4cb-ab65-45e1-a171-8b87c1738465",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Mandatory fields Event Creation",
+              "fullTitle": "Event Creation Mandatory fields Event Creation",
+              "timedOut": null,
+              "duration": 19953,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const eventThree = eventData.event3;\nconst eventstartDate = eventData.event3.startDate;\nconst eventendDate = eventData.event3.endDate;\nconst eventcloseDate = eventData.event3.closeDate;\ncy.contains(\"button\", \"ADD EVENT\").click();\ncy.get('input[placeholder=\"Enter Event Name\"]').type(eventThree.eventName);\ncy.get('#start_date').click();\n(0, _selectDate.selectDate)(eventstartDate);\ncy.get('#end_date').click();\n(0, _selectDate.selectDate)(eventendDate);\ncy.get('#close_date').click();\n(0, _selectDate.selectDate)(eventcloseDate);\ncy.contains(\"label\", \"Event Type*\").parent().find('input[type=\"text\"]').type(eventThree.eventType).wait(500).type(\"{enter}\");\ncy.contains(\"label\", \"Inventory*\").parent().click();\ncy.get('#scrollable-div').scrollTo('bottom').wait(5000);\ncy.get('#scrollable-div').contains('span', eventThree.inventory).scrollIntoView().should('be.visible').click({\n  force: true\n});\ncy.contains(\"label\", \"Select Project owner(s)*\").parent().click().find('input[type=\"search\"]').type(eventThree.projectOwner).wait(5000).type(\"{enter}\");\ncy.get('input[class=\"PrivateSwitchBase-input css-1m9pwf3\"]').click();\ncy.contains(\"button\", \"SUBMIT\").click();\ncy.wait(5000);",
+              "err": {},
+              "uuid": "dd28f657-f307-421d-8397-3496c9b3f0c2",
+              "parentUUID": "3e30b4cb-ab65-45e1-a171-8b87c1738465",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Duplicate Event Creation",
+              "fullTitle": "Event Creation Duplicate Event Creation",
+              "timedOut": null,
+              "duration": 19972,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const eventFour = eventData.event4;\nconst eventstartDate = eventData.event4.startDate;\nconst eventendDate = eventData.event4.endDate;\nconst eventcloseDate = eventData.event4.closeDate;\ncy.contains(\"button\", \"ADD EVENT\").click();\ncy.get('input[placeholder=\"Enter Event Name\"]').type(eventFour.eventName);\ncy.get('#start_date').click();\n(0, _selectDate.selectDate)(eventstartDate);\ncy.get('#end_date').click();\n(0, _selectDate.selectDate)(eventendDate);\ncy.get('#close_date').click();\n(0, _selectDate.selectDate)(eventcloseDate);\ncy.contains(\"label\", \"Event Type*\").parent().find('input[type=\"text\"]').type(eventFour.eventType).wait(500).type(\"{enter}\");\ncy.contains(\"label\", \"Inventory*\").parent().click();\ncy.get('#scrollable-div').scrollTo('bottom').wait(5000);\ncy.get('#scrollable-div').contains('span', eventFour.inventory).scrollIntoView().should('be.visible').click({\n  force: true\n});\ncy.contains(\"label\", \"Select Project owner(s)*\").parent().click().find('input[type=\"search\"]').type(eventFour.projectOwner).wait(5000).type(\"{enter}\");\ncy.get('input[class=\"PrivateSwitchBase-input css-1m9pwf3\"]').click();\ncy.contains(\"button\", \"SUBMIT\").click();\ncy.wait(5000);",
+              "err": {},
+              "uuid": "b5fb2d17-3633-476f-9568-f9505415d638",
+              "parentUUID": "3e30b4cb-ab65-45e1-a171-8b87c1738465",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Multiple Inventory Event Creation",
+              "fullTitle": "Event Creation Multiple Inventory Event Creation",
+              "timedOut": null,
+              "duration": 26012,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const eventFive = eventData.event5;\nconst eventstartDate = eventData.event5.startDate;\nconst eventendDate = eventData.event5.endDate;\nconst eventcloseDate = eventData.event5.closeDate;\ncy.contains(\"button\", \"ADD EVENT\").click();\ncy.get('input[placeholder=\"Enter Event Name\"]').type(eventFive.eventName);\ncy.get('#start_date').click();\n(0, _selectDate.selectDate)(eventstartDate);\ncy.get('#end_date').click();\n(0, _selectDate.selectDate)(eventendDate);\ncy.get('#close_date').click();\n(0, _selectDate.selectDate)(eventcloseDate);\ncy.contains(\"label\", \"Event Type*\").parent().find('input[type=\"text\"]').type(eventFive.eventType).wait(500).type(\"{enter}\");\ncy.contains(\"label\", \"Inventory*\").parent().click();\ncy.get('#scrollable-div').scrollTo('bottom').wait(5000);\ncy.get('#scrollable-div').contains('span', eventFive.inventory1).scrollIntoView().should('be.visible').click({\n  force: true\n});\ncy.contains(\"label\", \"Select Project owner(s)*\").eq(0).parent().click().find('input[type=\"search\"]').type(eventFive.projectOwner1).wait(5000).type(\"{enter}\");\ncy.get('input[class=\"PrivateSwitchBase-input css-1m9pwf3\"]').click();\ncy.contains('h1', 'Inventories Details').click();\ncy.contains(\"button\", \"Add another Inventory\").click();\ncy.contains(\"span\", \"Select Inventory\").click({\n  force: true\n});\ncy.get('#scrollable-div').scrollTo('bottom').wait(5000);\ncy.get('#scrollable-div').contains('span', eventFive.inventory2).scrollIntoView().should('be.visible').click({\n  force: true\n});\ncy.contains('span', 'Select Project owner(s)').click();\ncy.get('#default-search').should('be.visible').type(eventFive.projectOwner2).wait(5000).type('{enter}');\ncy.get('input[class=\"PrivateSwitchBase-input css-1m9pwf3\"]').click();\ncy.contains(\"button\", \"SUBMIT\").click();",
+              "err": {},
+              "uuid": "56206cfd-ffbd-4296-9fb8-5ec1705064e7",
+              "parentUUID": "3e30b4cb-ab65-45e1-a171-8b87c1738465",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a2851034-066b-4452-8788-02997e0bd78b",
+            "8ca1fd1b-b7ab-42e9-9ee0-ac10c8541f44",
+            "dd28f657-f307-421d-8397-3496c9b3f0c2",
+            "b5fb2d17-3633-476f-9568-f9505415d638",
+            "56206cfd-ffbd-4296-9fb8-5ec1705064e7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 132147,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
