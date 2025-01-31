@@ -6,6 +6,12 @@
         "brandName3": "Capcom",
         "brandName4": "Corgi",
         "brandName5": "Fireboult"
+      },
+      "notfitbrand": {
+        "brandName1": "Bardot",
+        "brandName2": "Baylis",
+        "brandName3": "Birlea",
+        "brandName4": "Blank",
+        "brandName5": "Canyon"
       }
-	    
 	  }
