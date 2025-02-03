@@ -336,16 +336,13 @@ describe("Assign Brands by BO", () => {
               cy.log(`📌 Index for ${brandName}: ${index}`);
               if (index !== -1) {
                 cy.log(`✅ Match found for brand: ${brandName}`);
-      
                 // Step 5: Recalculate the index and hover over the matching brand row
                 cy.get('div.gap-1.w-full.flex > a') .each(($el, idx) => {
                     if (idx === index) {
                       cy.wrap($el).scrollIntoView().trigger('mouseover').wait(1500);
                       cy.get('div[aria-label*="More"]', { timeout: 10000 }).should('be.visible').click({ force: true });
-      
                       // Step 6: Click "Move to not fit" option
                       cy.contains('p', 'Move to not fit', { timeout: 5000 }).should('be.visible').click({ force: true });
-      
                       // Step 7: Confirm move action
                       cy.contains('button', "YES, MOVE").click();
                       cy.log(`✔️ Moved ${brandName} to NotFit`);
@@ -356,9 +353,7 @@ describe("Assign Brands by BO", () => {
               }
             });
          });
-       });
-
-   
+       }); 
 });
       
       
