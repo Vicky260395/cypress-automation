@@ -1,38 +1,11 @@
   
 	  {
-      "assignlistbrand": {
-        "brandName1": "Aqualung",
-        "brandName2": "Arena",
-        "brandName3": "Aviva",
-        "brandName4": "Carrera",
-        "brandName5": "Castore"
-      },
-      "notfitlistbrand": {
-        "brandName1": "Aquasphere",
-        "brandName2": "Babyliss",
-        "brandName3": "Bahe",
-        "brandName4": "Charnos",
-        "brandName5": "Otto10"
-      },
-      "assignnotfitbrand": {
-        "brandName1": "Aquasphere",
-        "brandName2": "Babyliss",
-        "brandName3": "Bahe",
-        "brandName4": "Charnos",
-        "brandName5": "Otto10"
-      },
-      "Unassignnotfitbrand": {
-        "brandName1": "Campingaz",
-        "brandName2": "Canterbury",
-        "brandName3": "Dahon",
-        "brandName4": "Nordictrack",
-        "brandName5": "Otto12"
-      },
-      "movetonotfitAssignBrand": {
-        "brandName1": "Aphmau",
-        "brandName2": "Aquascutum",
-        "brandName3": "Charnos",
-        "brandName4": "Otto20",
-        "brandName5": "Otto26"
+        "assigncardbrand": {
+        "brandName1": "Bissell",
+        "brandName2": "Blackburn",
+        "brandName3": "Capcom",
+        "brandName4": "Corgi",
+        "brandName5": "Fireboult"
       }
+      
 	  }
